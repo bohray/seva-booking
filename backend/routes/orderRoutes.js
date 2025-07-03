@@ -11,19 +11,19 @@ router.post("/", async (req, res) => {
       return res.status(400).json({ message: "Missing Fields" });
     }
 
-    // Create or find user
+    
     let existingUser = await User.findOne({ contact: user.contact });
     if (!existingUser) {
       existingUser = await User.create(user);
     }
 
-    // Create the order with embedded address and userId reference
+    
     const newOrder = await Order.create({
       userId: existingUser._id,
       address,
       items,
-      paymentId: paymentId || "", // optional
-      orderId: orderId || "", // optional
+      paymentId: paymentId || "", 
+      orderId: orderId || "", 
       amountToPay: amountToPay || 0,
       createdAt: Date.now(),
     });
