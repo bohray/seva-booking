@@ -1,0 +1,75 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  align-items: center;
+  background: #ffffff;
+  padding: 0.5rem 2rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.navOptions {
+  display: flex;
+  gap: 1rem;
+}
+
+.userSection {
+  position: relative;
+  cursor: pointer;
+}
+
+.userIcon {
+  font-weight: 500;
+}
+
+.dropdown {
+  position: absolute;
+  top: 1.5rem;
+  right: 0;
+  background: #fff;
+  width: 250px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  z-index: 10;
+}
+
+.userInfo p {
+  margin: 0.3rem 0;
+}
+
+.latestOrders {
+  margin-top: 1rem;
+}
+
+.latestOrders ul {
+  padding-left: 1rem;
+  margin: 0.5rem 0 0;
+}
+
+.latestOrders li {
+  font-size: 0.9rem;
+}
+
+.logoutBtn {
+  background: #cc0000;
+  color: white;
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.customLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.customLink:hover {
+  color: #007bff;
+}

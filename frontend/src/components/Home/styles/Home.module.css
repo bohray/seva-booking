@@ -1,0 +1,22 @@
+.container {
+  padding: 2rem;
+  text-align: center;
+}
+
+.cardGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.viewMore {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}

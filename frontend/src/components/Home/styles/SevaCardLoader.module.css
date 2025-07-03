@@ -1,0 +1,66 @@
+.skeleton {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #f0f0f0;
+  }
+  50% {
+    background-color: #e0e0e0;
+  }
+  100% {
+    background-color: #f0f0f0;
+  }
+}
+
+.image {
+  width: 100%;
+  height: 200px;
+  background-color: #ddd;
+}
+
+.info {
+  padding: 1rem;
+}
+
+.line {
+  height: 12px;
+  background-color: #ccc;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.title {
+  width: 60%;
+  height: 18px;
+}
+
+.description {
+  width: 90%;
+}
+
+.tags {
+  display: flex;
+  gap: 6px;
+  margin: 10px 0;
+}
+
+.tags span {
+  height: 18px;
+  width: 50px;
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.price {
+  width: 70px;
+  height: 16px;
+}
+
+.btn {
+  flex: 1;
+  height: 32px;
+  background-color: #bbb;
+  border-radius: 6px;
+}
